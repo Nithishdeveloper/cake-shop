@@ -1,0 +1,591 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOME</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    html{
+        background-color:whitesmoke;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .logo-content {
+        float: left;
+        position: relative;
+        margin-left: 30px;
+    }
+
+    .logo-content img {
+        width: 250px;
+    }
+
+    .address-content {
+        float: right;
+        padding-right: 20px;
+        padding-top: 10px;
+
+    }
+
+    .navbar {
+        width: 100%;
+        position: absolute;
+        margin-top: 65px;
+        background-color: black;
+    }
+
+    .navbar-nav {
+        list-style-type: none;
+
+    }
+
+    .nav-item {
+        float: left;
+        margin-top: -12px;
+    }
+
+    .nav-item a {
+        display: block;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        margin-left: 10px;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color on hover */
+    .nav-item a:hover {
+        background-color: red;
+        color: white;
+    }
+
+    .active {
+        background-color: red;
+        color: white;
+    }
+
+    /* start slider css coding */
+    .mySlides {
+        display: none;
+    }
+
+    .carousel {
+        padding-top: 116px;
+    }
+
+    /* end slider css coding */
+    /*start css section coding*/
+    .popular-sweets,
+    .popular-savories,
+    popular-biscuits,
+    .popular-dry-food,
+    .popular-minute-khana {
+        padding-top: 20px;
+    }
+
+    .popular-sweets-header,
+    .popular-savories-header,
+    .popular-dry-food-header,
+    .popular-biscuits-header,
+    .popular-minute-khana-header {
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    .img-box-container {
+        display: flex;
+        padding: 40px 80px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .img-box {
+        border: 1px solid #ccc;
+        box-shadow: 0px 0px 10px #ddd;
+        width: 20%;
+        padding: 10px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .img-h,
+    .img-price {
+        text-align: center;
+        color: deeppink;
+        font-family: sans-serif;
+        line-height: 5px;
+    }
+
+    .img-btn {
+        width: 100px;
+        height: 40px;
+        color: white;
+        font-size:15px;
+        border: none;
+        border-radius: 5px;
+        font-family: sans-serif;
+        box-shadow: none;
+        background-color: #F45AAD;
+        outline: none;
+    }
+
+    .img-btn:hover {
+        background-color: deeppink;
+        cursor: pointer;
+    }
+
+    /*extra btn coding*/
+
+
+    /* start service coding */
+    .service-container {
+        width: 100%;
+        height: 120px;
+        text-align: center;
+    }
+
+    .payment,
+    .delivary,
+    .track {
+        width: 33%;
+        height: 120px;
+        float: left;
+        color: gray;
+    }
+
+    /*end service coding*/
+    /*start footer coding*/
+
+    .footer {
+        width: 100%;
+        height: 220px;
+        background-color: black;
+    }
+
+    .first-footer,
+    .second-footer,
+    .third-footer,
+    .fourth-footer {
+        width: 24%;
+        height: 220px;
+        float: left;
+        line-height: 25px;
+        color: gray;
+    }
+
+    .icon-box i:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .second-footer i:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .third-footer i:hover {
+        color: white;
+        cursor: pointer;
+    }
+
+    .powerby {
+        width: 100%;
+        height: 60px;
+        padding-top: 10px;
+        margin-bottom: 0;
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    /*end footer coding */
+</style>
+
+<body>
+    <!--start header coding-->
+    <header>
+        <div class="logo-content">
+            <!-- <img src="photos/TheSweetShop.png"> -->
+           <h1 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Cake Box
+        </h1>
+        </div>
+        <!-- <div class="address-content"> -->
+            <!-- <strong> Venue : 4 Brook Bond road,<br> coimbatore, Tamilnadu <br></strong> -->
+               <!-- <strong>India's largest sweets and backeries shop</strong>  -->
+        <!-- </div>> -->
+    </header>
+    <br>
+    
+    <!--end header coding-->
+    <!--start nav coding-->
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="Creative.html" class="nav-link">Creative cakes</a></li>
+            <li class="nav-item"><a href="Express.html" class="nav-link"> Express Cakes</a></li>
+            <li class="nav-item"><a href="regular.html" class="nav-link">Regular Cakes</a></li>
+            <li class="nav-item"><a href="product.html" class="nav-link">Product</a></li>
+            <!-- <li class="nav-item"><a href="fast food.html" class="nav-link"></a></li> -->
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="logout.html" class="nav-link">logout</a></li>
+            <li class="nav-item" style="float:right;"><a href="login.html" class="nav-link">Login & Signup</a></li>
+            
+            
+
+        </ul>
+        <a href="cart.html"><i class="fa fa-shopping-cart"
+                style="color: white;float:right;margin-right:30px;font-size:18px;"> Cart<div
+                    style="width:20px;height:20px;background-color:yellow; float: right;margin-left:7px;border-radius:40%;text-align: center;color: black;">
+                    <span id="cartNo">1</span></div></i>
+        </a>
+        <!-- <input type="search" style="width:290px;border:none;outline:none;border-radius:5px;padding:5px;display: none;margin-top:-2px" placeholder="search items" id="search-box"> -->
+        <i class="fa fa-search" style="color: white;float:right;font-size:18px;cursor:pointer;margin-right:18px;"
+            id="search-btn" onclick="demo()"></i>
+    </nav>
+    <!--end nav coding-->
+    <!--start profile setting coding-->
+    <div
+        style="width:50px; height:45px;background-color:red;color: white; float:right;margin-top:300px;position:fixed;z-index:1; margin-left:-10px;border-radius:8px;">
+        <a href="profile.html" style="text-decoration:none;color:white;"><i class="fa fa-gear fa-spin"
+                style="font-size: 32px;float:right;padding:7px;"></i></a>
+    </div>
+    <!--end profile setting coding-->
+    <!--start slider coding-->
+    <div style="width:400px;height:35px;z-index:1000;position: absolute;border-radius: 10px;margin-top:120px;margin-left:50%;display:none;"
+        id="search-box">
+        <input type="text"
+            style="width:400px;height: 30px;border-radius: 10px;outline: none;background-color:black;color: white;padding:10px;font-size:18px;"
+            placeholder="Search items">
+    </div>
+    <div class="carousel">
+        <img class="mySlides" src="https://www.thecakeshop.co.in/assets/web/images/slider/slider-2.png" style="width:100%">
+        <img class="mySlides" src="https://www.thecakeshop.co.in/assets/web/images/slider/slider-1.png" style="width:100%">
+        <img class="mySlides" src="https://www.thecakeshop.co.in/assets/web/images/slider/slider-3.png" style="width:100%">
+        <img class="mySlides" src="https://www.thecakeshop.co.in/assets/web/images/slider/slider-2.png"  style="width:100%">
+        <img class="mySlides" src="https://www.thecakeshop.co.in/assets/web/images/slider/slider-1.png" style="width:100%">
+        <img class="mySlides" src="https://www.thecakeshop.co.in/assets/web/images/slider/slider-3.png" style="width:100%">
+    </div>
+    <!--end slider coding-->
+    <!--start section coding-->
+    <!-- <section>
+        <!--start sweets coding-->
+        <div class="popular-sweets">
+            <h1 class="popular-sweets-header">TOP SELLING CAKES</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://media.istockphoto.com/id/1148468700/photo/black-forest-cake-schwarzwald-pie-dark-chocolate-and-cherry-dessert-on-a-white-wooden.jpg?s=612x612&w=0&k=20&c=3nEBphzaDSOVb2pyws76QXHL4Lx8EDfks1raOiU7LVY=" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn"  onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://img.freepik.com/premium-photo/red-velvet-cake-red_123827-13196.jpg?w=2000" style="width:100%">
+                    <h4 class="img-h">Cake-002</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://media.istockphoto.com/id/1141703911/photo/honey-lemon-beehive-cake.jpg?s=170667a&w=is&k=20&c=2DFZ_YJhEgoK1ODItzD2-wQuVXQyfOnpA9EgjAzCtMA=" style="width:100%">
+                    <h4 class="img-h">Cake-003</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx4bvlpwRFDyfAUnxaNOnKDcToywF2JsvO41609ZdWF3hmCXNXKbIBtp3TvBwaqLrIl6M&usqp=CAU" style="width:100%">
+                    <h4 class="img-h">Cake-004</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="sweets.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+
+        </div>
+
+        <!--end sweets coding-->
+        <!--start savories coding-->
+        <div class="popular-savories">
+            <h1 class="popular-savories-header">CREATIVE CAKES</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://i.pinimg.com/736x/69/8e/82/698e82c9da9a90e50943bed3088cf7f8.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://c1.wallpaperflare.com/preview/181/505/164/wedding-cake-cake-chocolate-wedding-cakes.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://i.pinimg.com/originals/e9/31/aa/e931aabccc71de2977af42bce42a3f25.png" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://media.bakingo.com/cute-lion-cake-them2653flav-A.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="savories.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+
+            </div>
+        </div>
+        <!--end savories coding-->
+        <!--start dry-food coding-->
+        <div class="popular-dry-food">
+            <h1 class="popular-dry-food-header">EXPRESS CAKES</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://www.fnp.com/images/pr/x/v20200316131831/ferrero-rocher-truffle-cake-1-kg_2.jpg  " style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://assets.winni.in/product/primary/2021/8/53357.jpeg?dpr=2&w=220 " style="width:100%">
+                    <h4 class="img-h"> Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://d3cif2hu95s88v.cloudfront.net/live-site-2016/product-image/010/10102018/15391510806394-600x600.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://static.halfcute.com/rs:600:auto:auto/jpeg:85/cakeszone/product/cakezone-kitkat-ferrero-rochers-cake-halfcute-18b15bb0-7735-11ea-8378-fd24c3796785.png" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="dryfood.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+        </div>
+        <!--end dry-food coding-->
+        <!--start biscuits coding-->
+        <div class="popular-biscuits">
+            <h1 class="popular-biscuits-header">REGULAR CAKES</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://images.pexels.com/photos/1702373/pexels-photo-1702373.jpeg?cs=srgb&dl=pexels-brent-keane-1702373.jpg&fm=jpg=" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://w0.peakpx.com/wallpaper/753/330/HD-wallpaper-pink-birtay-cake-birtay-cakes-food-fancy-cakes-cakes-birtays-abstract-pink-other.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://p.turbosquid.com/ts-thumb/4K/YmqYUA/hypaVcuo/cake/jpg/1545487366/600x600/fit_q87/59c601fe9d45562b8126754cdfd08a000ea09030/cake.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://w0.peakpx.com/wallpaper/12/210/HD-wallpaper-spring-flower-shapes-cake-cake-daisies-bakery-shaped-flower-frosting-abstract-dessert.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="biscuits.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>  
+                </div>
+            </div>
+        </div>
+        <!--end biscuits coding-->
+        <!--start minute-khana coding-->
+        <div class="popular-minute-khana">
+            <h1 class="popular-minute-khana-header">PARTY CAKES</h1>
+            <div class="img-box-container">
+                <div class="img-box" align="center">
+                    <img src="https://i.pinimg.com/originals/d4/9e/4e/d49e4e2e79fbcedc5351c99fd1a6ab6a.jpg" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://lh3.googleusercontent.com/-Mx_zgSOnJNI/VELCSxbpu0I/AAAAAAAAADk/kbcuhMBvT7c/s576/Angry%2520Birds%2520Birthyday%2520Cake%25201.JPG" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://content.instructables.com/ORIG/FK8/F4KB/JQ0TT3TR/FK8F4KBJQ0TT3TR.jpg?auto=webp" style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="img-box" align="center">
+                    <img src="https://w0.peakpx.com/wallpaper/849/693/HD-wallpaper-960x800px-bird-cake-decoration-cute-love-marriage-owls-wedlock.jpg
+                    " style="width:100%">
+                    <h4 class="img-h">Cake-001</h4>
+                    <p class="img-price">Rs.20/pice</p>
+                    <button class="img-btn" onclick="abs()">Add to Cart</button>
+                </div>
+                <div class="more-btn" style="font-size:40px; margin-top:100px;">
+                    <abbr title="More !"><a href="minutekhana.html" class="fa fa-angle-double-right"
+                            style="color:gray;text-decoration:none;" r></a></abbr>
+                </div>
+            </div>
+        </div>
+        <!--end savories coding-->
+    </section> 
+    <!--end section coding-->
+    <!--start service coding-->
+    <div class="service-container">
+        <div class="payment">
+            <!-- <img src="photos/service01.png"> -->
+            <h4>100% SECURE PAYMENTS</h4>
+        </div>
+        <div class="delivary">
+            <!-- <img src="photos/service02.png"> -->
+            <h4>FAST DELIVERY ALL OVER INDIA</h4>
+
+        </div>
+        <div class="track">
+            <!-- <img src="photos/service04.png"> -->
+
+            <h4>TRACK YOUR ORDERS</h4>
+        </div>
+    </div>
+    <!--end service coding-->
+    <!--start footer coding-->
+    <footer class="footer">
+        <div class="first-footer" style="padding-left:30px;">
+            <h3><i>Address</i></h3>
+            Venue : 4 Brook Bond road,<br> coimbatore, Tamilnadu <br>
+                Phone No : 6296725332<br>
+                Another no : 7585069971<br>
+                Email:arunkumar @gmail.com
+            
+        </div>
+
+        <div class="second-footer">
+            <h3><i>Policy Information</i></h3>
+            <i>Privacy Policy</i><br>
+            <i>Cancellation and Return Policy</i><br>
+            <i>Contact Us</i><br>
+            <i>Shop Locator</i>
+
+        </div>
+
+        <div class="third-footer">
+            <h3><i>Useful Links</i></h3>
+            <i>Home</i><br>
+            <i>Sweets</i><br>
+            <i>Savories</i><br>
+            <i>Dry Foods</i><br>
+            <i>Biscuits</i>
+
+
+        </div>
+        <div class="fourth-footer">
+            <h3><i>Social Links</i></h3>
+            <div class="icon-box">
+                <i class="fa fa-facebook" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Facebook</i>
+            </div>
+
+            <div class="icon-box">
+                <i class="fa fa-google-plus" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Google</i>
+            </div>
+
+            <div class="icon-box">
+                <i class="fa fa-twitter" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Twitter</i>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-instagram" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Instagram</i>
+            </div>
+            <div class="icon-box">
+                <i class="fa fa-pinterest" style="float:left;padding-right: 10px;padding-top:5px;"></i>
+                <i>Pinterest</i>
+            </div>
+        </div>
+    </footer>
+    <!--end footer coding-->
+    <!--start power by coding-->
+    <!-- <div class="powerby">
+        <h4><i>Copyright © 2019 POWERED BY SOURAV</i></h4>
+       
+    </div> -->
+    <!--end power by coding-->
+    <!--start search box coding-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script>
+       function abs(){
+        swal("Good job!", "You clicked the button!", "success");
+       }
+        function demo() {
+            var x = document.getElementById("search-box");
+            if (x.style.display == "none")
+                x.style.display = "block";
+            else if (x.style.display == 'block')
+                x.style.display = "none";
+        }
+    </script>
+    <!--end search box coding-->
+
+    <!--start slider js coding-->
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000); // Change image every 2 seconds
+        }
+
+       
+    </script>
+    <!--end slider js coding-->
+    <script src="js/index.js"></script>
+ 
+
+</body>
+
+</html>

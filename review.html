@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Supaviews - A Supabase Demo</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'><link rel="stylesheet" href="review.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="supaviews">
+	<img class="supaviews__logo" src="https://app.supabase.io/img/supabase-logo.svg"/>
+	<div class="supaviews__gradient"></div>
+	<div class="supaviews__add">
+		<div class="supaview">
+			<h1 class="supaview__title">Add a new review</h1>
+			<form id="review">
+				<fieldset class="supaview__rating">
+					<input type="radio" id="star5" name="rate" value="5" /><label for="star5"></label>
+					<input type="radio" id="star4" name="rate" value="4" /><label for="star4"></label>
+					<input type="radio" id="star3" name="rate" value="3" /><label for="star3"></label>
+					<input type="radio" id="star2" name="rate" value="2" /><label for="star2"></label>
+					<input type="radio" id="star1" name="rate" value="1" /><label for="star1"></label>
+				</fieldset>
+				<div class="supaview__copy">
+					<input type="text" name="name" placeholder="Name"/>
+					<textarea name="message" placeholder="Message" rows="5"></textarea>
+				</div>
+				<button class="supaview__submit">Submit review</button>
+			</form>
+		</div>
+	</div>
+	<div class="supaviews__list">
+		<div class="supaview">Looks empty around here..</div>
+	</div>
+</div>
+<!-- partial -->
+  <script type="module" src="review.js"></script>
+
+</body>
+</html>
